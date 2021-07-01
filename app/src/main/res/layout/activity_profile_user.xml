@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ProfileUserActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_height="170dp"
+        android:layout_width="170dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/profile_image1"/>
+
+    <TextView
+        android:id="@+id/tvDisplayName1"
+        android:text="Display Name"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_below="@id/profile_image1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvStatus1"
+        android:text="Hi! Im using chat messenger"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_below="@id/tvDisplayName1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTotalFriend1"
+        android:text="235 Friend"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btnFriendRequest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnDeclineFriend1"
+        android:text="Decline friend"
+        android:paddingHorizontal="10dp"
+        android:background="@color/btnregister"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnFriendRequest1"
+        android:text="Sent Friend request"
+        android:background="@color/btnregister"
+        android:textColor="@android:color/white"
+        android:layout_above="@id/btnDeclineFriend1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:paddingHorizontal="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

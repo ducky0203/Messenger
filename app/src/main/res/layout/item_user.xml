@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginVertical="10dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:src="@drawable/avatar"
+        android:layout_margin="10dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp" />
+
+    <TextView
+        android:id="@+id/tvDisplayNameUser"
+        android:text="Display Name"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_toEndOf="@id/userImage"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/isOnline"
+        android:src="@drawable/is_online"
+        android:layout_toEndOf="@id/tvDisplayNameUser"
+        android:layout_margin="18dp"
+        android:visibility="invisible"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvStatusUser"
+        android:text="Default status"
+        android:layout_toEndOf="@id/userImage"
+        android:layout_below="@id/tvDisplayNameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
